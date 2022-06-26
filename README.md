@@ -1,1 +1,4 @@
-# Course-Management-System-File-base-Java-Swing-
+# Course-Management-System
+File-base
+Java
+Swing
