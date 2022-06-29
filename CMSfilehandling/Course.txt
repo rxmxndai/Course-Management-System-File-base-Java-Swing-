@@ -1,0 +1,2 @@
+1A		BIT
+2B		BIBM
