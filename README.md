@@ -1,17 +1,41 @@
-# Course-Management-System
-File-base
-Java
-Swing
+# Course Management System
 
-Course Management System repository consists of 14 classes. The data in this  project are managed by file handling (.txt file). 
-There are all together 5 text files. 
-The data in the files are separated by a tab (\t) and they are read and stored in array . 
-This is how data is circulated through out the classes using those data. 
-So, those data are read and wrtten in CourseManager, ModuleManager, StudentFileManager, TutorFileManager class and 
-hence has many associations with other classes.
-The mainGui class has the main function which will operate this overall project. It has an association 
-relation with SignIn class which consists of the signIn() function. Then it validates among student, tutor 
-and admin username and password. 
-It will prompt the user to admin, student or tutor dashboard depending on the type of account. 
-TutorSpace class has the tutor dashboard, StudentSpace class has the student dashboard and AdminControl class has the admin dashboard. 
-It will have association with course, module, tutor,, student etc managers as their data are being manipulated
+## Overview
+The Course Management System is a Java Swing-based application that manages course-related data using file handling. The system consists of 14 classes and manages data through 5 text files. Each file's data is separated by tabs (`\t`) and read into arrays for processing. The data is read and written in classes like `CourseManager`, `ModuleManager`, `StudentFileManager`, and `TutorFileManager`, which have various associations with other classes.
+
+## Classes and Their Roles
+
+### Main Classes
+- **MainGui**: Contains the main function to operate the entire project. It has an association with the `SignIn` class.
+- **SignIn**: Contains the `signIn()` function for user authentication. It validates usernames and passwords for students, tutors, and admins, and directs users to the appropriate dashboard.
+- **TutorSpace**: Provides the dashboard for tutors.
+- **StudentSpace**: Provides the dashboard for students.
+- **AdminControl**: Provides the dashboard for admins.
+
+### Manager Classes
+- **CourseManager**: Manages course data.
+- **ModuleManager**: Manages module data.
+- **StudentFileManager**: Manages student data.
+- **TutorFileManager**: Manages tutor data.
+
+## File Handling
+The system uses 5 text files to manage data:
+- The data is separated by tabs (`\t`).
+- Data is read into arrays and circulated through various classes for manipulation.
+- Classes like `CourseManager`, `ModuleManager`, `StudentFileManager`, and `TutorFileManager` handle reading and writing to these files.
+
+## Associations
+- **MainGui**: Associated with `SignIn`, `TutorSpace`, `StudentSpace`, and `AdminControl`.
+- **SignIn**: Validates and directs to `TutorSpace`, `StudentSpace`, or `AdminControl` based on user type.
+- **TutorSpace**: Associated with tutor-related data management.
+- **StudentSpace**: Associated with student-related data management.
+- **AdminControl**: Associated with overall system management and control.
+
+## How to Run
+1. Ensure you have Java installed on your system.
+2. Compile the Java files using `javac`.
+3. Run the `MainGui` class to start the application.
+
+```sh
+javac MainGui.java
+java MainGui
